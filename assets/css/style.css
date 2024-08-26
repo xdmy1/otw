@@ -9,10 +9,10 @@ body {
     flex-direction: column;
     justify-content: center;
     background-image: url(/assets/images/bg.png);
+
 }
 a {
     text-decoration: none;
-    color: black;
 }
 
 .secular {
@@ -32,8 +32,10 @@ h3.secular {
 }
 
 nav{
-     position: relative;
+     position: sticky;
+     top: 0;
      z-index: 999;
+
      width:auto;
      padding: 1rem;
  }
@@ -42,15 +44,17 @@ nav{
         /*This part is important for centering*/
         display: grid;
         place-items: center;
+
      }
       .typing-demo {
-        width: 11ch;
+        width: 12ch;
         animation: typing 3s steps(22), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
         border-right: 3px solid;
         font-family: monospace;
         font-size: 2em;
+
       }
       
       @keyframes typing {
@@ -244,6 +248,7 @@ nav{
     }
     .steps {
         padding-bottom: 6rem;
+        padding-inline: 1rem;
         align-items: center;
         width: auto;
     }
