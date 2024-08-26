@@ -245,6 +245,7 @@ nav{
     .steps {
         padding-bottom: 6rem;
         align-items: center;
+        width: auto;
     }
 
     .steps3 {
